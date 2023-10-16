@@ -299,18 +299,38 @@ header .navbar ul li a:hover {
   align-items: center;
 }
 
+.container-experience h2{
+  font-size: 40px;
+  font-weight: 800;
+  color: #000000;
+  padding-top: 3.5rem;
+  text-align: center;
+  padding-bottom: 4rem;
+}
+
+.container-experience h2 span{
+  color: #2506ad;
+}
+
 .card {
   display: flex;
-  border: 1px solid #000000;
+  border: 1px solid #ffffff;
   border-radius: 10px;
   overflow: hidden;
   margin: 10px;
   max-width: 100%; /* Sesuaikan dengan kebutuhan Anda */
+  background: rgb(252, 252, 252);
+  box-shadow: 0.2rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.card:hover{
+  transform: scale(1.03);
+  box-shadow: 1rem 0.5rem 1.2rem rgba(0, 0, 0, 0.3);
 }
 
 .img-card {
-  max-width: 50%;
-  height: auto;
+  width: 30%;
+  height: 200px;
 }
 
 .card-content {
@@ -319,18 +339,24 @@ header .navbar ul li a:hover {
 }
 
 .h3-card {
-  font-size: 1.5rem;
+  font-size: 3rem;
+  color: #011aff;
   margin: 0;
-}
-
-.h4-card {
-  font-size: 1.2rem;
-  margin: 0;
-  color: #777;
+  padding-bottom: 4px;
 }
 
 .p-card {
-  font-size: 1rem;
+  font-size: 2rem;
+  margin: 0;
+  color: #020202;
+  padding-bottom: 4px;
+}
+
+.h4-card {
+  font-size: 2.5rem;
+  color:#ff7b00;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
 }
 
 /* Responsif untuk Tablet */
@@ -339,11 +365,36 @@ header .navbar ul li a:hover {
       flex-direction: column;
       align-items: center;
   }
+
+  .img-card {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .h3-card {
+    font-size: 2rem;
+  }
+
+  .h4-card {
+    font-size: 1.5rem;
+  }
 }
 
 /* Responsif untuk Ponsel */
 @media (max-width: 480px) {
   .card {
       margin: 5px;
+  }
+
+  .img-card {
+    max-width: 100%;
+  }
+
+  .h3-card {
+    font-size: 2rem;
+  }
+
+  .h4-card {
+    font-size: 1.5rem;
   }
 }
